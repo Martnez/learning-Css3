@@ -80,7 +80,6 @@ nav a {
 .nav-toggle-lable span::before {
   display: block;
   background-color: white;
-
   height: 2px;
   width: 2rem;
   border-radius: 2px;
