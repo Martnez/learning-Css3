@@ -16,8 +16,7 @@
       <div class="logo">
         <h1>webs</h1>
       </div>
-      <input type="checkbox" class="nav-toggle" id="nav-toggle" />
-      <div class="item">
+      <div class="item" id="item">
         <ul class="nav-list">
           <li class="nav-li-item">
             <a class="active" href="/page2.html">HOW IT WORKS</a>
@@ -30,9 +29,9 @@
         </ul>
         </p>
       </div>
-      <label for="nav-toggle" class="nav-toggle-lable ">
-        <span></span>
-      </label>
+      <div class="nav-toggle">
+        <div class="hambuger" id="hambuger"></div>
+      </div>
       <div class="nav-btn">
         <button class="btn">&#128512; EN</button>
         <button class="btn">SIGN IN</button>
@@ -118,5 +117,11 @@
         </div>
       </div>
     </section>
+    <script>
+      const pannel =document.getElementById("hambuger");
+      pannel.addEventListener("click",()=>{
+        document.getElementById("item").style.opacity=1;
+      })
+    </script>
   </body>
 </html>
