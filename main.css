@@ -181,27 +181,39 @@ section img {
     margin-left: 1em;
     left: 0;
     top: 20px;
-    height: 100%;
     width: 10%;
   }
   .hambuger,
-  .hambuger::before,
-  .hambuger::after {
+  .hambuger::after,
+  .hambuger::before {
     display: block;
     background-color: black;
     width: 60px;
     height: 3px;
     position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.5s ease-in-out;
   }
-  .hambuger::before,
-  .hambuger::after {
+  .hambuger::after,
+  .hambuger::before {
     content: "";
   }
   .hambuger::before {
-    top: -10px;
+    transform: translateY(-16px);
   }
   .hambuger::after {
-    top: 10px;
+    transform: translateY(16px);
+  }
+  .nav-toggle.open .hambuger {
+    transform: translateX(-50px);
+    backgrounds: transparent;
+  }
+  .nav-toggle.open .hambuger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .nav-toggle.open .hambuger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
   }
   .item {
     position: absolute;
@@ -235,5 +247,12 @@ section img {
   }
   .item a:hover::after {
     transform: scale(1, 1);
+  }
+  .p1 {
+    font-size: 1em;
+    margin-left: 30px;
+  }
+  .p2 {
+    margin-left: 200px;
   }
 }
