@@ -16,7 +16,7 @@
       <div class="logo">
         <h1>webs</h1>
       </div>
-      <div class="item" >
+      <div class="item"  id="item">
         <ul class="nav-list">
           <li class="nav-li-item">
             <a class="active" href="/page2.html">HOW IT WORKS</a>
@@ -29,7 +29,7 @@
         </ul>
         </p>
       </div>
-      <div class="nav-toggle">
+      <div class="nav-toggle" id="nav-toggle">
         <div class="hambuger"></div>
       </div>
       <div class="nav-btn">
@@ -118,15 +118,18 @@
       </div>
     </section>
     <script>
-      const btnToggle= document.querySelector("nav-toggle");
-      let btnToggle = false;
+      const btnToggle= document.getElementById("nav-toggle");
+      const pannel=document.getElementById("item");
+      let toggleOpen = false;
       btnToggle.addEventListener("click",()=>{
-        if(!btnToggle){
+        if(!toggleOpen){
           btnToggle.classList.add('open');
-          btnToggle=true;
+          pannel.classList.add("show")
+        toggleOpen=true;
         }else{
           btnToggle.classList.remove("open");
-          btnToggle=false;
+          pannel.classList.remove("show")
+          toggleOpen=false;
         }
       })
     </script>

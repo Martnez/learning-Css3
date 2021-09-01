@@ -191,6 +191,7 @@ section img {
     width: 60px;
     height: 3px;
     position: absolute;
+    top: 4px;
     cursor: pointer;
     border-radius: 2px;
     transition: all 0.5s ease-in-out;
@@ -203,11 +204,11 @@ section img {
     transform: translateY(-16px);
   }
   .hambuger::after {
-    transform: translateY(16px);
+    transform: translateY(10px);
   }
   .nav-toggle.open .hambuger {
     transform: translateX(-50px);
-    backgrounds: transparent;
+    background: transparent;
   }
   .nav-toggle.open .hambuger::before {
     transform: rotate(45deg) translate(35px, -35px);
@@ -215,12 +216,15 @@ section img {
   .nav-toggle.open .hambuger::after {
     transform: rotate(-45deg) translate(35px, 35px);
   }
+  .item.show {
+    opacity: 1;
+  }
   .item {
     position: absolute;
     background-color: white;
     margin-top: 27px;
     opacity: 0;
-    transition: opacity ease-in-out 200ms;
+    transition: opacity ease-in-out 1000ms;
   }
   .item ul {
     all: unset;
