@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background-color: #23424a;
+  width: 100%;
+}
+.innnerSection {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em;
+  color: white;
+}
+.innnerSection h1 {
+  font-size: 48px;
+  margin-bottom: 1em;
+}
+.innnerSection p,
+h3 {
+  font-size: 21px;
+}
+button {
+  margin: 2em;
+  padding: 1em;
+  background-color: #38cfd9;
+  color: #23424a;
+  border-radius: 5em;
+}
