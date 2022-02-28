@@ -14,6 +14,7 @@ body {
 .innnerSection {
   width: 50%;
   margin: 0 auto;
+  max-width: 750px;
   padding: 2em;
   color: white;
 }
@@ -26,6 +27,7 @@ h3 {
   font-size: 21px;
 }
 button {
+  display: inline-block;
   margin: 2em;
   padding: 1em;
   background-color: #38cfd9;
