@@ -1,0 +1,29 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.3125re;
+    line-height: 1.6;
+    color:#222C2A;
+
+}
+image:{
+    max-width: 100%;
+}
+h1,h2{
+    margin-top:0;
+    font-weight: 900;
+    line-height: 1;
+}
+.intro{
+    background-color: #f3ee9d;
+    padding: 200px 0;
+    text-align: center;
+    color:#824936;
+}
+.intro_text{
+
+    text-transform: uppercase;
+}
